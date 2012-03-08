@@ -1,0 +1,77 @@
+/*
+ * Colors:
+ *
+ * BG grey : 1b1d1e
+ * White : f8f8f2
+ *
+ * Pink : f92672
+ * Orange : fd971f
+ * Green : a6e22e
+ * Purple : ae81ff
+ * Beige : e6db74
+ * Blue : 66d9ef
+ * Text Grey : #465457
+ */
+
+html {
+  font-family: 'Menlo';
+  font-size: 9pt;
+  background-color: #1b1d1e;
+  color: #f8f8f2;
+}
+body {}
+
+.url { 
+  color: #a6e22e;
+  font-weight:bold;
+  word-break: break-all; 
+}
+.url:hover{
+  color:#f92672;
+}
+.address {text-decoration:none}
+.highlight {
+  font-weight: bold;
+  padding: 0 3px;
+  color: #f92672;
+}
+.time { color: #465457; }
+.place { color: #465457; }
+
+.line {}
+.line[alternate=even] {}
+.line[alternate=odd] {}
+.line[highlight=true] {}
+
+.line[type=action] .sender:before {
+  content: "• ";
+  white-space: nowrap;
+}
+
+.sender{ font-weight:bold;}
+.sender[type=normal] { color: #66d9ef; }
+.sender[type=myself] { color: #fd971f; }
+
+.message[type=privmsg] {}
+.message[type=notice] { color: #ae81ff; }
+.message[type=action] { color: #ae81ff;}
+
+.message[type=system], .message[type=join], .message[type=kick],
+.message[type=quit], .message[type=kill], .message[type=nick], .message[type=mode],
+.message[type=topic], .message[type=invite], .message[type=wallops] {
+  color: #465457;
+}
+
+.message[type=reply] { color: #a6e22e; }
+.message[type=reply] .url { color: #e6db74;}
+
+.message[type=part] { color: #000; }
+
+/* below is not done yet */
+.message[type=error], .message[type=error_reply] { color: #f67b37; }
+
+.message[type=dcc_send_send] { color: #c5af75; }
+.message[type=dcc_send_receive] { color: #f9ee98; }
+.message[type=debug_send] { color: #8996a8; }
+.message[type=debug_receive] { color: #afc4db; }
+
