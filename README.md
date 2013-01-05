@@ -1,4 +1,5 @@
 Limechat Theme - Molokai
+========================
 
 Here is a port of the custom [Molokai vim theme] by Steve Losh to Limechat.
 
